@@ -1,2 +1,2 @@
 release: yarn prisma migrate deploy
-web: node server.js
+web: node ./dist/server.js
