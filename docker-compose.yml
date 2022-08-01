@@ -16,6 +16,8 @@ services:
     command: >
       sh -c "
       /wait && 
+      yarn prisma generate &&
+      yarn prisma migrate deploy &&
       yarn dev"
     volumes:
       - ./app:/usr/src/app
