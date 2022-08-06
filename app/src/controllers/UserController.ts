@@ -1,7 +1,7 @@
-import { createUserService } from "@services/UserService";
+import * as UserService from "@services/UserService";
 
-export async function createUser() {
-  await createUserService();
+export async function create() {
+  await UserService.create();
 
   console.log("Olá, partindo de um Controller");
 }
