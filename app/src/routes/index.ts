@@ -1,7 +1,7 @@
-import express from "express";
+import { Router } from "express";
 import fs from "fs";
 
-const routes = express.Router();
+const routes = Router();
 
 fs.readdirSync(__dirname).forEach((file) => {
   if (!file.includes("index.ts")) {
