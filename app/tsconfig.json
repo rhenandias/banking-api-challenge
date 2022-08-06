@@ -103,9 +103,10 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "paths": {
       "@controllers/*": ["./src/controllers/*"],
-      "@business/*": ["./src/business/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
       "@modules/*": ["./src/modules/*"],
-      "@routes/*": ["./src/routes/*"]
+      "@routes/*": ["./src/modules/*"],
+      "@services/*": ["./src/services/*"]
     }
   }
 }
